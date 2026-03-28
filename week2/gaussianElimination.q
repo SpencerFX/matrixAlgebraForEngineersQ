@@ -15,8 +15,7 @@ scaleRow:{[M;i;c] @[M;i;:;c*M[i]]}
 addRows:{[M;src;dst;c] @[M;dst;:;M[dst]+c*M[src]]}
 
 / Perform Gaussian elimination on augmented matrix M and return upper-triangular form
-forwardElim:{
-  [M]
+forwardElim:{[M]
   n:count M;
   i:0;
   while[i<n-1;
@@ -34,8 +33,7 @@ forwardElim:{
  };
 
 / Solve an upper-triangular augmented matrix by back substitution
-backSub:{
-  [U]
+backSub:{[U]
   n:count U;
   x:n#0f;
   i:n-1;
@@ -78,8 +76,7 @@ scaleRow:{[M;i;c] @[M;i;:;c*M[i]]}
 addRows:{[M;src;dst;c] @[M;dst;:;M[dst]+c*M[src]]}
 
 / Compute reduced row echelon form
-rref:{
-  [M]
+rref:{[M]
   M:"f"$M;
   rows:count M;
   colz:count first M;
@@ -114,8 +111,7 @@ rref:{
  };
 
 / Return pivot column indices (1-based) from an RREF matrix
-pivotCols:{
-  [R]
+pivotCols:{[R]
   rows:count R;
   colz:count first R;
   piv:();

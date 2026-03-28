@@ -44,46 +44,7 @@ M:mm[M3;mm[M2;M1]]
 
 / Check that applying all elementary matrices to A gives U
 checkElim:{[A;M;U] mm[M;A]~U}
-
-/ Example outputs
-/ A
-/ -3  2 -1
-/  6 -6  7
-/  3 -4  4
-/
-/ M1
-/ 1 0 0
-/ 2 1 0
-/ 0 0 1
-/
-/ A1
-/ -3  2 -1
-/  0 -2  5
-/  3 -4  4
-/
-/ M2
-/ 1 0 0
-/ 0 1 0
-/ 1 0 1
-/
-/ A2
-/ -3  2 -1
-/  0 -2  5
-/  0 -2  3
-/
-/ M3
-/ 1  0 0
-/ 0  1 0
-/ 0 -1 1
-/
-/ U
-/ -3  2 -1
-/  0 -2  5
-/  0  0 -2
-/ checkElim[A;M;U]
-/ 1b
 // =================================================
-\
 tr:{flip x}
 
 / Build an n x n identity matrix
@@ -134,56 +95,57 @@ approxEq:{[X;Y;eps] all raze ((abs each X-Y) < enlist eps)}
 / Check A ≈ L*U
 checkLU:{[A;L;U] approxEq["f"$A;mm["f"$L;"f"$U];1e-6]}
 
-/ Example outputs
+/ TESTS ==============================================
 / q)A
 / -3  2 -1
 /  6 -6  7
 /  3 -4  4
-/
-/ q)M1
+
+/ M1
 / 1 0 0
 / 2 1 0
 / 0 0 1
 /
-/ q)M2
+/ M2
 / 1 0 0
 / 0 1 0
 / 1 0 1
 /
-/ q)M3
+/ M3
 / 1  0 0
 / 0  1 0
 / 0 -1 1
 /
-/ q)U
+/ U
 / -3  2 -1
 /  0 -2  5
 /  0  0 -2
 /
-/ q)M1inv
+/ M1inv
 /  1 0 0
 / -2 1 0
 /  0 0 1
 /
-/ q)M2inv
+/ M2inv
 /  1 0 0
 /  0 1 0
 / -1 0 1
 /
-/ q)M3inv
+/ M3inv
 / 1 0 0
 / 0 1 0
 / 0 1 1
 /
-/ q)L
+/ L
 /  1 0 0
 / -2 1 0
 / -1 1 1
 /
-/ q)mm[L;U]
+/ mm[L;U]
 / -3  2 -1
 /  6 -6  7
 /  3 -4  4
 /
-/ q)checkLU[A;L;U]
+/ checkLU[A;L;U]
 / 1b
+// =================================================
