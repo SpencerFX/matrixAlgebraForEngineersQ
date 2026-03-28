@@ -18,8 +18,7 @@ scaleRow:{[M;i;c] @[M;i;:;c*M[i]]}
 addRows:{[M;src;dst;c] @[M;dst;:;M[dst]+c*M[src]]}
 
 / Reduce a matrix to reduced row echelon form
-rref:{
-  [M]
+rref:{[M]
   M:"f"$M;
   rows:count M;
   colz:count first M;
@@ -50,16 +49,14 @@ rref:{
  };
 
 / Compute the inverse of an invertible square matrix A by reducing [A|I] to [I|A^{-1}]
-inverseByRref:{
-  [A]
+inverseByRref:{[A]
   n:count A;
   R:rref augment["f"$A;eye n];
   n _' R
  };
 
 / Multiply two matrices A and B using row-by-column dot products
-mm:{
-  [A;B]
+mm:{[A;B]
   BT:tr B;
   {sum x*y}/:\:[A;BT]
  };
