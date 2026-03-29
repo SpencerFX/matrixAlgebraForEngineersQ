@@ -37,7 +37,6 @@ m:(1 2 3f;4 5 6f;7 8 10f);
 / =======================================================
 / Question 4: Compute Determinant Using the Leibniz Formula
 / Solution Below:
-
 det4Mat:{[matVal]
   aVal:(first matVal) 0;
   bVal:(first matVal) 1;
@@ -56,3 +55,60 @@ det4Mat:{[matVal]
   res
  };
 / ========================================================
+
+/ =======================================================
+/ Question 5: Using the formula for a three-by-three determinant, 
+/ determine the characteristic equation for a general three-by-three matrix A. 
+/ This equation should be written as a cubic equation in λ
+/ Solution Below:
+
+/ =======================================================
+
+/ =======================================================
+/ Question 6: Find the eigenvalues and eigenvectors of a given
+/ 2x2  matrix
+/ Solution Below:
+
+/ =======================================================
+
+/ =======================================================
+/ Question 7: Find the eigenvalues and eigenvectors of a given
+/ 3x3  matrix
+/ Solution Below:
+
+/ =======================================================
+
+/ =======================================================
+/ Question 7: Find the eigenvalues of given matrix
+/ 3x3  matrix
+/ Solution Below:
+
+/ =======================================================
+
+/ =======================================================
+/ Question 8: Using the defining properties of a determinant, 
+/ prove that if a matrix has two equal rows, then the determinant is zero.  
+
+/ =======================================================
+
+
+/ =======================================================
+/ Question 9:
+/ Using the defining properties of a determinant, prove that the determinant 
+/ is a linear function of any row, holding all other rows fixed.  
+
+/ =======================================================
+
+
+/ =======================================================
+/ Question 10: Using the results of the last two problems,   prove that if we add 
+/ k kk times row- i ii to row- j jj, the determinant doesn't change. 
+
+/ =======================================================
+
+
+/ =======================================================
+/ Question 11: Use Gaussian elimination to find the 
+/ determinant of the following matrix:
+
+/ =======================================================
