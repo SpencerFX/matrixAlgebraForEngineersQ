@@ -112,3 +112,24 @@ det4Mat:{[matVal]
 / determinant of the following matrix:
 
 / =======================================================
+
+/ =======================================================
+/ Question 12: Prove that two eigenvectors corresponding to distinct eigenvalues are linearly independent.
+
+/ =======================================================
+
+/ =======================================================
+/ Question 13: Prove that two eigenvectors corresponding to distinct eigenvalues are linearly independent.
+/ Prove that if the columns of an n-by-n nn matrix are linearly independent, then the matrix is invertible. (A matrix whose columns are eigenvectors corresponding to distinct eigenvalues is therefore invertible.)
+/ 
+/ =======================================================
+
+/ =======================================================
+/ Question 14: Diagonalize the provided matrix A
+
+/ =======================================================
+
+/ =======================================================
+/ Question 15: Determine where the exponent in the following matrix is a positive number
+
+/ =======================================================
